@@ -16,10 +16,7 @@ app.use(cors({
 }));
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/codex-simple', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/codex-simple');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
