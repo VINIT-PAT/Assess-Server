@@ -17,10 +17,6 @@ app.use(cors({
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/codex-simple');
-<<<<<<< HEAD
-
-=======
->>>>>>> 4ecd520d4335c5112fe8d894fa27b765053cdca9
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
