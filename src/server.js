@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:3000', // Adjust as needed for your frontend URL
+  origin: 'https://vinit-pat.github.io/Assess-FE/', // Adjust as needed for your frontend URL
 }));
 
 // Connect to MongoDB
