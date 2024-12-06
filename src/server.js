@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 10000;
 // Middleware
 app.use(express.json()); // Parse incoming JSON requests
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://vinit-pat.github.io/Assess-FE', // Match your frontend URL here
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true, // Allow credentials (cookies, headers)
 }));
