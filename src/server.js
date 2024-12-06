@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 10000;
 // Middleware
 app.use(express.json()); // Parse incoming JSON requests
 app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  origin: process.env.FRONTEND_URL || 'https://vinit-pat.github.io', // Set frontend URL dynamically
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allow these HTTP methods
   credentials: true, // Allow credentials (cookies, headers)
 }));
 
